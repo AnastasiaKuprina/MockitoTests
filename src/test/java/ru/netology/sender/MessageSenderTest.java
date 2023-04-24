@@ -30,7 +30,7 @@ class MessageSenderTest {
     }
 
     @Test
-    public void testSendMessageRussia(){
+    public void testSendMessageRussia() {
         Mockito.when(geoService.byIp("172."))
                 .thenReturn(new Location(null, Country.RUSSIA, null, 0));
 
@@ -48,7 +48,7 @@ class MessageSenderTest {
     }
 
     @Test
-    public void testSendMessageUSA(){
+    public void testSendMessageUSA() {
         Mockito.when(geoService.byIp("96."))
                 .thenReturn(new Location(null, Country.USA, null, 0));
 
